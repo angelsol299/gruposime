@@ -14,16 +14,20 @@ const useStyles = makeStyles(theme => ({
   },
   buttonResponsive: {
     [theme.breakpoints.down('xs')]: {
-      marginLeft: '-130px !important',
-      paddingTop: '220px',
-      position: 'relative !important',
+      //marginLeft: '65px !important',
+      // paddingTop: '220px',
+      // position: 'relative !important',
       flexGrow: '1 !important',
       flexDirection: 'column !important',
-      flexWrap: 'wrap !important'
+      flexWrap: 'wrap !important',
+      position: 'relative',
+      left: '65% !important',
+      top: '45% !important'
     },
 
     [theme.breakpoints.up('sm')]: {
-      marginLeft: '-222px !important'
+      marginLeft: '-222px !important',
+      left: '50%'
     },
     [theme.breakpoints.up('md')]: {
       marginLeft: '-194px !important'
@@ -59,8 +63,8 @@ const Mains = () => {
         className={classes.buttonResponsive}
         style={{
           position: 'absolute',
+
           top: '50%',
-          left: '50%',
           display: 'flex',
           justifyContent: 'space-between',
           marginLeft: '-194px'
