@@ -60,7 +60,7 @@ const useStyles = makeStyles(theme => ({
     marginTop: '600px',
     [theme.breakpoints.down('xs')]: {
       position: 'absolute',
-      marginTop: '744px'
+      marginTop: '672px'
     }
   },
   myHeader: {
