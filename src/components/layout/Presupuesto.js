@@ -32,7 +32,7 @@ const useStyles = makeStyles(theme => ({
     fontFamily: 'Roboto',
     [theme.breakpoints.down('xs')]: {
       left: '10% !important',
-      marginTop: '780px'
+      marginTop: '78g0px'
     }
   },
   buttonPresupuesto: {
@@ -64,7 +64,10 @@ const useStyles = makeStyles(theme => ({
   },
   myHeader: {
     width: '100%',
-    height: '100%'
+    height: '100%',
+    [theme.breakpoints.down('xs')]: {
+      marginTop: '-159px'
+    }
   }
 }));
 
