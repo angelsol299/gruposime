@@ -32,7 +32,7 @@ const useStyles = makeStyles(theme => ({
     fontFamily: 'Roboto',
     [theme.breakpoints.down('xs')]: {
       left: '10% !important',
-      marginTop: '610px'
+      marginTop: '780px'
     }
   },
   buttonPresupuesto: {
@@ -57,10 +57,14 @@ const useStyles = makeStyles(theme => ({
     backgroundRepeat: 'no-repeat',
     backgroundSize: 'cover',
     background: 'rgba(0,0,0, 0.2)',
-    marginTop: '470px',
+    marginTop: '472px',
     [theme.breakpoints.down('xs')]: {
-      marginTop: '575px'
+      marginTop: '743px'
     }
+  },
+  myHeader: {
+    width: '100%',
+    height: '100%'
   }
 }));
 
@@ -68,23 +72,25 @@ const Presupuesto = () => {
   const classes = useStyles();
   return (
     <div>
-      <img className={classes.myHeaderImg} src={projects} alt="" />
-      <h3 className={classes.textOnImg}>Presupuesto</h3>
-      <Button
-        className={classes.buttonPresupuesto}
-        style={{
-          backgroundColor: 'white',
-          color: 'black',
-          borderRadius: '15px',
-          width: '200px'
-        }}
-        variant="contained"
-        color="secondary"
-        className={classes.buttonPresupuesto}
-      >
-        {' '}
-        Haz un presupuesto
-      </Button>
+      <div className={classes.myHeader}>
+        <img className={classes.myHeaderImg} src={projects} alt="" />
+        <h3 className={classes.textOnImg}>Presupuesto</h3>
+        <Button
+          className={classes.buttonPresupuesto}
+          style={{
+            backgroundColor: 'white',
+            color: 'black',
+            borderRadius: '15px',
+            width: '200px'
+          }}
+          variant="contained"
+          color="secondary"
+          className={classes.buttonPresupuesto}
+        >
+          {' '}
+          Haz un presupuesto
+        </Button>
+      </div>
     </div>
   );
 };
