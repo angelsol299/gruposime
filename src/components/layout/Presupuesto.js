@@ -52,11 +52,12 @@ const useStyles = makeStyles(theme => ({
   myHeaderImg: {
     width: '100%',
     height: '100%',
-    position: 'relative',
+    position: 'absolute',
     backgroundPosition: 'center',
     backgroundRepeat: 'no-repeat',
     backgroundSize: 'cover',
     background: 'rgba(0,0,0, 0.2)',
+    marginTop: '600px',
     [theme.breakpoints.down('xs')]: {
       position: 'absolute',
       marginTop: '743px'

@@ -44,7 +44,7 @@ const useStyles = makeStyles(theme => ({
   myHeaderImg: {
     width: '100%',
     height: '100%',
-    position: 'relative',
+    position: 'absolute',
     backgroundSize: 'cover',
     background: 'rgba(0,0,0, 0.7)',
     marginTop: '-83px',
@@ -81,7 +81,7 @@ const Mains = () => {
           color="secondary"
           className={classes.button}
         >
-          Pregunta
+          Preguntas mess
         </Button>
         <Button
           style={{
