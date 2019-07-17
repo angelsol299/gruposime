@@ -48,9 +48,7 @@ const useStyles = makeStyles(theme => ({
     backgroundSize: 'cover',
     background: 'rgba(0,0,0, 0.7)',
     marginTop: '-83px',
-    [theme.breakpoints.down('xs')]: {
-      position: 'absolute'
-    }
+    [theme.breakpoints.down('xs')]: {}
   }
 }));
 
@@ -81,7 +79,7 @@ const Mains = () => {
           color="secondary"
           className={classes.button}
         >
-          Preguntas mess
+          Pregunta
         </Button>
         <Button
           style={{

@@ -20,19 +20,14 @@ const useStyles = makeStyles(theme => ({
   },
   textOnImg: {
     left: '30%',
-    width: '300px',
-    height: '250px',
-    position: 'absolute',
     backgroundPosition: 'center',
     backgroundRepeat: 'no-repeat',
     backgroundSize: 'cover',
-    marginTop: '500px',
     zIndex: '200',
     fontSize: '30px',
     fontFamily: 'Roboto',
     [theme.breakpoints.down('xs')]: {
-      left: '10% !important',
-      marginTop: '780px'
+      left: '10% !important'
     }
   },
   buttonPresupuesto: {
@@ -45,23 +40,19 @@ const useStyles = makeStyles(theme => ({
     zIndex: '200',
     fontFamily: 'Roboto',
     [theme.breakpoints.down('xs')]: {
-      left: '25% !important',
-      marginTop: '1400px'
+      left: '25% !important'
     }
   },
   myHeaderImg: {
     width: '100%',
-    height: '100%',
-    position: 'absolute',
+    height: '700px',
+
     backgroundPosition: 'center',
     backgroundRepeat: 'no-repeat',
     backgroundSize: 'cover',
     background: 'rgba(0,0,0, 0.2)',
-    marginTop: '600px',
-    [theme.breakpoints.down('xs')]: {
-      position: 'absolute',
-      marginTop: '672px'
-    }
+
+    [theme.breakpoints.down('xs')]: {}
   },
   myHeader: {
     width: '100%',

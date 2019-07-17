@@ -240,7 +240,7 @@ const ResponsiveDrawer = props => {
   );
 
   return (
-    <div className={classes.root}>
+    <div className={classes.root} style={{ marginBottom: '-83px' }}>
       <CssBaseline />
       <AppBar position="fixed" className={classes.appBar}>
         {drawerz}
