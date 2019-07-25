@@ -3,8 +3,29 @@ import 'fullpage.js/vendors/scrolloverflow';
 import ReactFullpage from '@fullpage/react-fullpage';
 import main1 from '../pics/electricity.jpeg';
 import projects from '../pics/projects.jpg';
+import { makeStyles } from '@material-ui/core/styles';
+
+const useStyles = makeStyles(theme => ({
+  img: {
+    position: 'relative',
+    with: '100%',
+    height: '100%',
+    backgroundPosition: 'center',
+    backgroundRepeat: 'no-repeat',
+    backgroundSize: 'cover',
+    [theme.breakpoints.down('sm')]: {
+      width: '100%',
+      height: '100%',
+      //position: 'absolute',
+      backgroundSize: 'cover',
+      backgroundPosition: 'center',
+      backgroundRepeat: 'no-repeat'
+    }
+  }
+}));
 
 const FullPage = () => {
+  const classes = useStyles();
   const onLeave = (origin, destination, direction) => {
     console.log('Leaving section ' + origin.index);
   };
@@ -24,17 +45,7 @@ const FullPage = () => {
         return (
           <div id="fullpage-wrapper">
             <div className="section section1">
-              <img
-                src={main1}
-                alt=""
-                style={{
-                  with: '100%',
-                  height: '100%',
-                  backgroundPosition: 'center',
-                  backgroundRepeat: 'no-repeat',
-                  backgroundSize: 'cover'
-                }}
-              />
+              <img className={classes.img} src={main1} alt="" />
             </div>
             <div className="section">
               <div className="slide">
