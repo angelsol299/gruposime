@@ -1,7 +1,6 @@
 import React from 'react';
 import Navbar from './components/layout/Navbar';
 import Mains from './components/layout/Mains';
-import Presupuesto from './components/layout/Presupuesto';
 
 import FullPage from './components/layout/FullPage';
 

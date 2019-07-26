@@ -131,20 +131,6 @@ const FullPage = () => {
                 <h3>Slide 2.3</h3>
               </div>
             </div>
-            <div className="section">
-              <img
-                className={classes.img}
-                src={projects}
-                alt=""
-                style={{
-                  with: '100%',
-                  height: '100%',
-                  backgroundPosition: 'center',
-                  backgroundRepeat: 'no-repeat',
-                  backgroundSize: 'cover'
-                }}
-              />
-            </div>
           </div>
         );
       }}
