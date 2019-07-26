@@ -1,6 +1,6 @@
-import React from 'react';
+import React, { Fragment } from 'react';
 import { makeStyles } from '@material-ui/core/styles';
-import Button from '@material-ui/core/Button';
+import { Button, Container } from '@material-ui/core';
 import projects from '../pics/projects.jpg';
 import sime from '../pics/sime.png';
 
@@ -61,13 +61,23 @@ const useStyles = makeStyles(theme => ({
   }
 }));
 
+const myHeaderImg = {
+  width: '100%',
+  height: '100%',
+  //position: 'absolute',
+  backgroundPosition: 'center',
+  backgroundRepeat: 'no-repeat',
+  backgroundSize: 'cover',
+  background: 'rgba(0,0,0, 0.7)'
+};
+
 const Presupuesto = () => {
   const classes = useStyles();
   return (
-    <div>
-      <div className={classes.myHeader}>
-        <img className={classes.myHeaderImg} src={projects} alt="" />
-        <h3 className={classes.textOnImg}>Presupuesto</h3>
+    <Fragment>
+      <Container maxWidth="lg">
+        <img style={myHeaderImg} src={projects} alt="" />
+        <h3>Presupuesto</h3>
         <Button
           className={classes.buttonPresupuesto}
           style={{
@@ -83,8 +93,8 @@ const Presupuesto = () => {
           {' '}
           Haz un presupuesto
         </Button>
-      </div>
-    </div>
+      </Container>
+    </Fragment>
   );
 };
 

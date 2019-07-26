@@ -4,6 +4,7 @@ import ReactFullpage from '@fullpage/react-fullpage';
 import main1 from '../pics/electricity.jpeg';
 import projects from '../pics/projects.jpg';
 import { makeStyles } from '@material-ui/core/styles';
+import { Button, Container } from '@material-ui/core';
 
 const useStyles = makeStyles(theme => ({
   img: {
@@ -16,10 +17,9 @@ const useStyles = makeStyles(theme => ({
     [theme.breakpoints.down('sm')]: {
       width: '100%',
       height: '100%',
-      //position: 'absolute',
-      backgroundSize: 'cover',
-      backgroundPosition: 'center',
-      backgroundRepeat: 'no-repeat'
+      position: 'absolute',
+      marginLeft: '-200px',
+      marginTop: '-400px'
     }
   }
 }));
@@ -47,6 +47,7 @@ const FullPage = () => {
             <div className="section section1">
               <img className={classes.img} src={main1} alt="" />
             </div>
+
             <div className="section">
               <div className="slide">
                 <h3>Slide 2.1</h3>
