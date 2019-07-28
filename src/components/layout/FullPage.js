@@ -21,8 +21,8 @@ const useStyles = makeStyles(theme => ({
       width: '100%',
       height: '100%',
       position: 'absolute',
-      marginLeft: '-200px',
-      marginTop: '-363px'
+      marginLeft: '-198px',
+      marginTop: '-362px'
     }
   },
   imgGallery: {
@@ -36,7 +36,7 @@ const useStyles = makeStyles(theme => ({
       width: '100%',
       height: '100%',
       position: 'absolute',
-      marginLeft: '-204px',
+      marginLeft: '-205px',
       marginTop: '-363px'
     }
   },
