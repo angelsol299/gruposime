@@ -143,7 +143,6 @@ const FullPage = () => {
               </div>
               <div className="slide">
                 <img className={classes.imgGallery} src={pinzas} alt="" />
-                <h3>Slide 2.3</h3>
               </div>
             </div>
           </div>
