@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/gruposime/precache-manifest.ee26c2ad1c6c3d515e8e8e56010ec849.js"
+  "/gruposime/precache-manifest.beea223225f4fe794dc2011e4ab16ffe.js"
 );
 
 self.addEventListener('message', (event) => {
