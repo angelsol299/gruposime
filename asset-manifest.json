@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/gruposime/static/css/main.5d3b5ed3.chunk.css",
-    "main.js": "/gruposime/static/js/main.fafd0afe.chunk.js",
-    "main.js.map": "/gruposime/static/js/main.fafd0afe.chunk.js.map",
+    "main.js": "/gruposime/static/js/main.29021a13.chunk.js",
+    "main.js.map": "/gruposime/static/js/main.29021a13.chunk.js.map",
     "runtime~main.js": "/gruposime/static/js/runtime~main.fd0526dc.js",
     "runtime~main.js.map": "/gruposime/static/js/runtime~main.fd0526dc.js.map",
     "static/js/2.951bd1fe.chunk.js": "/gruposime/static/js/2.951bd1fe.chunk.js",
     "static/js/2.951bd1fe.chunk.js.map": "/gruposime/static/js/2.951bd1fe.chunk.js.map",
     "index.html": "/gruposime/index.html",
-    "precache-manifest.beea223225f4fe794dc2011e4ab16ffe.js": "/gruposime/precache-manifest.beea223225f4fe794dc2011e4ab16ffe.js",
+    "precache-manifest.ec690ec211d401016b0c636163010f99.js": "/gruposime/precache-manifest.ec690ec211d401016b0c636163010f99.js",
     "service-worker.js": "/gruposime/service-worker.js",
     "static/css/main.5d3b5ed3.chunk.css.map": "/gruposime/static/css/main.5d3b5ed3.chunk.css.map",
     "static/media/electricity.jpeg": "/gruposime/static/media/electricity.01fd01e1.jpeg",
