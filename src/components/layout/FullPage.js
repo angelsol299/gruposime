@@ -2,12 +2,13 @@ import React from 'react';
 import 'fullpage.js/vendors/scrolloverflow';
 import ReactFullpage from '@fullpage/react-fullpage';
 import main1 from '../pics/electricity.jpeg';
-import projects from '../pics/projects.jpg';
 import instalacion from '../pics/instalacion.jpg';
 import pruebas from '../pics/pruebas.jpg';
 import pinzas from '../pics/pinzas.jpg';
 import { makeStyles } from '@material-ui/core/styles';
-import { Button, Container } from '@material-ui/core';
+import { Button } from '@material-ui/core';
+import Certificaciones from './pages/Certificaciones';
+import Galeria from './pages/Galeria';
 
 const useStyles = makeStyles(theme => ({
   img: {
@@ -23,30 +24,11 @@ const useStyles = makeStyles(theme => ({
       width: '100%',
       height: '100%',
       position: 'absolute',
-      marginLeft: '-195px',
-      marginTop: '-361px'
+      left: '0%',
+      top: '0%'
     }
   },
-  galleryContainer: {
-    position: 'absolute',
-    right: '0%',
-    top: '100%'
-  },
-  imgGallery: {
-    with: '100%',
-    height: '99.2%',
-    backgroundPosition: 'center',
-    backgroundRepeat: 'no-repeat',
-    backgroundSize: 'cover',
-
-    [theme.breakpoints.down('sm')]: {
-      width: '100%',
-      height: '100%',
-      position: 'absolute',
-      marginLeft: '-204px',
-      marginTop: '-362px'
-    }
-  },
+  galleryContainer: {},
   buttonResponsive: {
     [theme.breakpoints.down('xs')]: {
       //marginLeft: '65px !important',
@@ -98,13 +80,12 @@ const FullPage = () => {
       render={({ state, fullpageApi }) => {
         return (
           <div id="fullpage-wrapper">
-            <div className="section section1">
+            <div className="section">
               <img className={classes.img} src={main1} alt="" />
               <div
                 className={classes.buttonResponsive}
                 style={{
                   position: 'absolute',
-
                   top: '50%',
                   display: 'flex',
                   justifyContent: 'space-between',
@@ -140,16 +121,11 @@ const FullPage = () => {
                 </Button>
               </div>
             </div>
-            <div className={`${classes.galleryContainer} ${'section active'}`}>
-              <div className="slide">
-                <img className={classes.imgGallery} src={instalacion} alt="" />
-              </div>
-              <div className="slide">
-                <img className={classes.imgGallery} src={pruebas} alt="" />
-              </div>
-              <div className="slide">
-                <img className={classes.imgGallery} src={pinzas} alt="" />
-              </div>
+            <div className="section">
+              <Galeria />
+            </div>
+            <div className="section">
+              <Certificaciones />
             </div>
           </div>
         );
