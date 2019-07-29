@@ -11,33 +11,40 @@ import { Button, Container } from '@material-ui/core';
 
 const useStyles = makeStyles(theme => ({
   img: {
-    position: 'relative',
+    position: 'absolute',
     with: '100%',
-    height: '99.2%',
+    height: '100%',
     backgroundPosition: 'center',
     backgroundRepeat: 'no-repeat',
     backgroundSize: 'cover',
+    left: '0%',
+    top: '0%',
     [theme.breakpoints.down('sm')]: {
       width: '100%',
       height: '100%',
       position: 'absolute',
-      marginLeft: '-198px',
-      marginTop: '-362px'
+      marginLeft: '-195px',
+      marginTop: '-361px'
     }
   },
+  galleryContainer: {
+    position: 'absolute',
+    right: '0%',
+    top: '100%'
+  },
   imgGallery: {
-    position: 'relative',
     with: '100%',
     height: '99.2%',
     backgroundPosition: 'center',
     backgroundRepeat: 'no-repeat',
     backgroundSize: 'cover',
+
     [theme.breakpoints.down('sm')]: {
       width: '100%',
       height: '100%',
       position: 'absolute',
-      marginLeft: '-205px',
-      marginTop: '-363px'
+      marginLeft: '-204px',
+      marginTop: '-362px'
     }
   },
   buttonResponsive: {
@@ -133,8 +140,7 @@ const FullPage = () => {
                 </Button>
               </div>
             </div>
-
-            <div className="section">
+            <div className={`${classes.galleryContainer} ${'section active'}`}>
               <div className="slide">
                 <img className={classes.imgGallery} src={instalacion} alt="" />
               </div>
