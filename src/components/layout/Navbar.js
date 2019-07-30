@@ -142,11 +142,6 @@ const ResponsiveDrawer = props => {
       </Link>
       <div to="/about">
         <ListItem button className={classes.drawerColorText}>
-          <span className={classes.spanMarginLeft}>Desarrollos</span>
-        </ListItem>
-      </div>
-      <div to="/about">
-        <ListItem button className={classes.drawerColorText}>
           <span className={classes.spanMarginLeft}>Trabajos</span>
         </ListItem>
       </div>

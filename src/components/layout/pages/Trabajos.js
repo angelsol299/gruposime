@@ -16,14 +16,26 @@ const useStyles = makeStyles(theme => ({
     width: '50%',
     position: 'absolute',
     left: '0%',
-    top: '50%'
+    top: '50%',
+    [theme.breakpoints.up('xs')]: {
+      height: '30%',
+      width: '80%',
+      left: '10%',
+      top: '30%'
+    }
   },
   four: {
     height: '40%',
     width: '40%',
     position: 'absolute',
     left: '58%',
-    top: '44%'
+    top: '44%',
+    [theme.breakpoints.up('xs')]: {
+      height: '30%',
+      width: '80%',
+      left: '10%',
+      top: '60%'
+    }
   },
   certificacionesTexto: {
     position: 'absolute',
@@ -40,6 +52,12 @@ const useStyles = makeStyles(theme => ({
       left: '0%',
       height: '13%'
     }
+  },
+  reponsiveLogos: {
+    [theme.breakpoints.up('xs')]: {
+      display: 'grid',
+      gridColumn: '1'
+    }
   }
 }));
 
@@ -48,8 +66,10 @@ const Trabajos = () => {
   return (
     <Fragment>
       {/* <img className={classes.img} src={circuitos} alt="" /> */}
+
       <img src={velas} className={classes.velas} alt="" />
       <img src={four} className={classes.four} alt="" />
+
       <h2 className={classes.certificacionesTexto}>Trabajos</h2>
     </Fragment>
   );
