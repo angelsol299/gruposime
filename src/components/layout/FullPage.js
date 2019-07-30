@@ -2,13 +2,19 @@ import React from 'react';
 import 'fullpage.js/vendors/scrolloverflow';
 import ReactFullpage from '@fullpage/react-fullpage';
 import main1 from '../pics/electricity.jpeg';
-import instalacion from '../pics/instalacion.jpg';
-import pruebas from '../pics/pruebas.jpg';
-import pinzas from '../pics/pinzas.jpg';
 import { makeStyles } from '@material-ui/core/styles';
 import { Button } from '@material-ui/core';
 import Certificaciones from './pages/Certificaciones';
 import Galeria from './pages/Galeria';
+import Circuitos from './pages/Circuitos';
+import {
+  Link,
+  Element,
+  Events,
+  animateScroll as scroll,
+  scrollSpy,
+  scroller
+} from 'react-scroll';
 
 const useStyles = makeStyles(theme => ({
   img: {
@@ -122,10 +128,15 @@ const FullPage = () => {
               </div>
             </div>
             <div className="section">
-              <Galeria />
+              <Element name="test1" className="element">
+                <Galeria />
+              </Element>
             </div>
             <div className="section">
               <Certificaciones />
+            </div>
+            <div className="section">
+              <Circuitos />
             </div>
           </div>
         );

@@ -16,6 +16,14 @@ import MenuIcon from '@material-ui/icons/Menu';
 import Toolbar from '@material-ui/core/Toolbar';
 import Typography from '@material-ui/core/Typography';
 import { makeStyles, useTheme } from '@material-ui/core/styles';
+import {
+  Link,
+  Element,
+  Events,
+  animateScroll as scroll,
+  scrollSpy,
+  scroller
+} from 'react-scroll';
 
 const drawerWidth = 240;
 
@@ -120,11 +128,18 @@ const ResponsiveDrawer = props => {
           <span className={classes.spanMarginLeft}>Galeria</span>
         </ListItem>
       </div>
-      <div to="/login">
+      <Link
+        activeClass="active"
+        to="test1"
+        spy={true}
+        smooth={true}
+        offset={50}
+        duration={500}
+      >
         <ListItem button className={classes.drawerColorText}>
           <span className={classes.spanMarginLeft}>Certificaciones</span>
         </ListItem>
-      </div>
+      </Link>
       <div to="/about">
         <ListItem button className={classes.drawerColorText}>
           <span className={classes.spanMarginLeft}>Desarrollos</span>
