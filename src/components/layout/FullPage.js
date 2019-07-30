@@ -6,7 +6,7 @@ import { makeStyles } from '@material-ui/core/styles';
 import { Button } from '@material-ui/core';
 import Certificaciones from './pages/Certificaciones';
 import Galeria from './pages/Galeria';
-import Circuitos from './pages/Circuitos';
+import Trabajos from './pages/Trabajos';
 import {
   Link,
   Element,
@@ -136,7 +136,7 @@ const FullPage = () => {
               <Certificaciones />
             </div>
             <div className="section">
-              <Circuitos />
+              <Trabajos />
             </div>
           </div>
         );
