@@ -8,6 +8,7 @@ import Certificaciones from './pages/Certificaciones';
 import Galeria from './pages/Galeria';
 import Trabajos from './pages/Trabajos';
 import Presupuesto from './pages/Presupuesto';
+import Nosotros from './pages/Nosotros';
 import ScrollUpButton from 'react-scroll-up-button';
 import {
   Link,
@@ -146,6 +147,9 @@ const FullPage = () => {
               </div>
               <div className="section">
                 <Presupuesto />
+              </div>
+              <div className="section">
+                <Nosotros />
               </div>
             </div>
           </ScrollUpButton>
