@@ -148,7 +148,7 @@ const FullPage = () => {
               <div className="section">
                 <Presupuesto />
               </div>
-              <div className="section">
+              <div className="section" style={{ background: '#FDFBF8' }}>
                 <Nosotros />
               </div>
             </div>
