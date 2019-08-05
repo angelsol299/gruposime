@@ -144,9 +144,9 @@ const FullPage = () => {
               <div className="section">
                 <Trabajos />
               </div>
-            </div>
-            <div className="section">
-              <Presupuesto />
+              <div className="section">
+                <Presupuesto />
+              </div>
             </div>
           </ScrollUpButton>
         );
