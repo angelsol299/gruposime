@@ -4,6 +4,8 @@ import velas from '../../pics/velas.png';
 import four from '../../pics/four.png';
 import { makeStyles } from '@material-ui/core/styles';
 import Card from '@material-ui/core/Card';
+import Button from '@material-ui/core/Button';
+import Grid from '@material-ui/core/Grid';
 
 const useStyles = makeStyles(theme => ({
   img: {
@@ -59,6 +61,14 @@ const useStyles = makeStyles(theme => ({
       display: 'grid',
       gridColumn: '1'
     }
+  },
+  button: {
+    margin: theme.spacing(1),
+
+    [theme.breakpoints.down('xs')]: {
+      width: '260px !important',
+      marginTop: '20px'
+    }
   }
 }));
 
@@ -66,29 +76,70 @@ const Trabajos = () => {
   const classes = useStyles();
   return (
     <Fragment>
-      <Card style={{ margin: '0 20px' }}>
-        {/* <img className={classes.img} src={circuitos} alt="" /> */}
-        <div style={{ margin: '10px 10px' }}>
-          <h2>PRESUPUESTO</h2>
-          <br />
-          <p>
-            Contamos con presupuestos flexibles de acuerdo a sus necesidades
-          </p>
-        </div>
-      </Card>
+      <Grid container spacing={6}>
+        <Grid item xs={12} sm={4}>
+          <Card style={{ margin: '0 20px ' }}>
+            {/* <img className={classes.img} src={circuitos} alt="" /> */}
+            <div style={{ margin: '20px 10px' }}>
+              <h2>PRESUPUESTO</h2>
+              <br />
+              <p>
+                Contamos con presupuestos flexibles de acuerdo a sus necesidades
+              </p>
+            </div>
+          </Card>
+        </Grid>
+        <br />
+        <br />
+        <Grid item xs={12} sm={4}>
+          <Card style={{ margin: '0 20px' }}>
+            {/* <img className={classes.img} src={circuitos} alt="" /> */}
+            <div style={{ margin: '20px 10px' }}>
+              <h2>TIPO</h2>
+              <br />
+              <p>
+                Ofrecemos nuestros servicios tanto a empresas privadas como a
+                todo tipo de hogares y organizaciones
+              </p>
+            </div>
+          </Card>
+        </Grid>
+        <br />
+        <br />
+        <Grid item xs={12} sm={4}>
+          <Card style={{ margin: '0 20px' }}>
+            {/* <img className={classes.img} src={circuitos} alt="" /> */}
+            <div style={{ margin: '20px 10px' }}>
+              <h2>OBTENER PRESUPUESTO</h2>
+              <br />
+              <p>
+                ¿Qué tengo que hacer para obterner un presupuesto?
+                <br />
+                <br />
+                Dado que cada necesidad de nuestros clientes es 100%
+                personalizada, no disponemos de presupuesto fijos. Para obtener
+                un presupuesto sólo da click en el siguiente botón.
+              </p>
+            </div>
+          </Card>
+        </Grid>
+      </Grid>
       <br />
-      <br />
-      <Card style={{ margin: '0 20px' }}>
-        {/* <img className={classes.img} src={circuitos} alt="" /> */}
-        <div style={{ margin: '10px 10px' }}>
-          <h2>TIPO</h2>
-          <br />
-          <p>
-            Ofrecemos nuestros servicios tanto a empresas privadas como a todo
-            tipo de hogares y organizaciones
-          </p>
-        </div>
-      </Card>
+      <b />
+      <Button
+        style={{
+          color: 'white',
+          borderRadius: '15px',
+          border: ' 2px solid white',
+          background: 'rgba(0,0,0,0.5)',
+          width: '200px'
+        }}
+        variant="outlined"
+        color="secondary"
+        className={classes.button}
+      >
+        Presupuestar
+      </Button>
     </Fragment>
   );
 };
