@@ -7,6 +7,8 @@ import { Button } from '@material-ui/core';
 import Certificaciones from './pages/Certificaciones';
 import Galeria from './pages/Galeria';
 import Trabajos from './pages/Trabajos';
+import Presupuesto from './pages/Presupuesto';
+import ScrollUpButton from 'react-scroll-up-button';
 import {
   Link,
   Element,
@@ -85,60 +87,68 @@ const FullPage = () => {
       afterLoad={afterLoad}
       render={({ state, fullpageApi }) => {
         return (
-          <div id="fullpage-wrapper">
-            <div className="section">
-              <img className={classes.img} src={main1} alt="" />
-              <div
-                className={classes.buttonResponsive}
-                style={{
-                  position: 'absolute',
-                  top: '50%',
-                  display: 'flex',
-                  justifyContent: 'space-between',
-                  marginLeft: '-194px'
-                }}
-              >
-                <Button
+          <ScrollUpButton
+            ContainerClassName="ScrollUpButton__Container"
+            TransitionClassName="ScrollUpButton__Toggled"
+          >
+            <div id="fullpage-wrapper">
+              <div className="section">
+                <img className={classes.img} src={main1} alt="" />
+                <div
+                  className={classes.buttonResponsive}
                   style={{
-                    backgroundColor: 'white',
-                    color: 'black',
-                    borderRadius: '15px',
-                    width: '200px'
+                    position: 'absolute',
+                    top: '50%',
+                    display: 'flex',
+                    justifyContent: 'space-between',
+                    marginLeft: '-194px'
                   }}
-                  variant="contained"
-                  color="secondary"
-                  className={classes.button}
                 >
-                  Pregunta
-                </Button>
-                <Button
-                  style={{
-                    color: 'white',
-                    borderRadius: '15px',
-                    border: ' 2px solid white',
-                    background: 'rgba(0,0,0,0.5)',
-                    width: '200px'
-                  }}
-                  variant="outlined"
-                  color="secondary"
-                  className={classes.button}
-                >
-                  Conócenos
-                </Button>
+                  <Button
+                    style={{
+                      backgroundColor: 'white',
+                      color: 'black',
+                      borderRadius: '15px',
+                      width: '200px'
+                    }}
+                    variant="contained"
+                    color="secondary"
+                    className={classes.button}
+                  >
+                    Pregunta
+                  </Button>
+                  <Button
+                    style={{
+                      color: 'white',
+                      borderRadius: '15px',
+                      border: ' 2px solid white',
+                      background: 'rgba(0,0,0,0.5)',
+                      width: '200px'
+                    }}
+                    variant="outlined"
+                    color="secondary"
+                    className={classes.button}
+                  >
+                    Conócenos
+                  </Button>
+                </div>
+              </div>
+              <div className="section">
+                <Element name="test1" className="element">
+                  <Galeria />
+                </Element>
+              </div>
+              <div className="section">
+                <Certificaciones />
+              </div>
+              <div className="section">
+                <Trabajos />
               </div>
             </div>
             <div className="section">
-              <Element name="test1" className="element">
-                <Galeria />
-              </Element>
+              <Presupuesto />
             </div>
-            <div className="section">
-              <Certificaciones />
-            </div>
-            <div className="section">
-              <Trabajos />
-            </div>
-          </div>
+          </ScrollUpButton>
         );
       }}
     />
