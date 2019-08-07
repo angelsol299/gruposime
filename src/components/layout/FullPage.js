@@ -9,6 +9,7 @@ import Galeria from './pages/Galeria';
 import Trabajos from './pages/Trabajos';
 import Presupuesto from './pages/Presupuesto';
 import Nosotros from './pages/Nosotros';
+import Contacto from './pages/Contacto';
 import ScrollUpButton from 'react-scroll-up-button';
 import {
   Link,
@@ -150,6 +151,9 @@ const FullPage = () => {
               </div>
               <div className="section" style={{ background: '#FDFBF8' }}>
                 <Nosotros />
+              </div>
+              <div className="section" style={{ background: '#FDFBF8' }}>
+                <Contacto />
               </div>
             </div>
           </ScrollUpButton>
