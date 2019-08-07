@@ -8,6 +8,7 @@ import Button from '@material-ui/core/Button';
 import Grid from '@material-ui/core/Grid';
 import Paper from '@material-ui/core/Paper';
 import Avatar from '@material-ui/core/Avatar';
+import TextField from '@material-ui/core/TextField';
 
 const useStyles = makeStyles(theme => ({
   img: {
@@ -70,6 +71,9 @@ const useStyles = makeStyles(theme => ({
     width: 50,
     height: 50,
     left: '43%'
+  },
+  button: {
+    margin: theme.spacing(1)
   }
 }));
 
@@ -85,11 +89,48 @@ const Trabajos = () => {
               <Paper style={{ background: 'lightGrey', color: 'white' }}>
                 <h2>Contacto</h2>
               </Paper>
+              <Grid container spacing={2}>
+                <Grid item xs={12} sm={4}>
+                  <form
+                    action="https://formspree.io/angelsol299@hotmail.com"
+                    method="POST"
+                  >
+                    <TextField
+                      required
+                      id="outlined-name"
+                      label="Name"
+                      className={classes.textField}
+                      //value={values.name}
+                      // onChange={handleChange('name')}
+                      margin="normal"
+                      variant="outlined"
+                      name="name"
+                    />
+                    <TextField
+                      required
+                      type="email"
+                      id="outlined-name"
+                      label="Email"
+                      className={classes.textField}
+                      //value={values.name}
+                      // onChange={handleChange('name')}
+                      margin="normal"
+                      variant="outlined"
+                      name="name"
+                    />
 
-              <p>
-                5 años de experiencia en el sectro hotelero. 3 años en CFE.
-                Universidad de Guadalajara.
-              </p>
+                    <Button
+                      type="submit"
+                      variant="outlined"
+                      color="primary"
+                      value="Send"
+                      className={classes.button}
+                    >
+                      Primary
+                    </Button>
+                  </form>
+                </Grid>
+              </Grid>
             </div>
           </Card>
         </Grid>
