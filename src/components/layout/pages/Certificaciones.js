@@ -76,13 +76,13 @@ const Certificaciones = () => {
   const classes = useStyles();
   return (
     <Fragment>
-      <img
+    <img
         style={{
           height: '100%',
           position: 'absolute',
           left: '0%',
           top: '0%'
-        }}
+        }}  
         src={projects}
         alt=""
       />
